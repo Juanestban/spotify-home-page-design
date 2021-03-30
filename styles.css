@@ -1,0 +1,205 @@
+:root {
+  --colorPrimary: #000000;
+  --colorSecundary: rgb(41, 65, 171);
+  --colorTerciary: #1ed760;
+  --colorWhite: #fff;
+  --color-text-header: rgb(217, 218, 220);
+}
+
+/* global styles */
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: var(--colorPrimary);
+  color: var(--colorWhite);
+  font-family: Circular, spotify-circular, Helvetica, Arial, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--colorWhite);
+}
+
+/* navigation-header */
+
+.container {
+  height: 80px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+  max-width: 1170px;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  font-family: Circular, spotify-circular, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: var(--colorPrimary);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  margin-top: 20px;
+  display: block;
+}
+
+.title a {
+  width: 132px;
+  height: 40px;
+  margin: 0;
+  color: var(--colorWhite);
+  display: inline-block;
+}
+
+.title a span svg g path {
+  color: var(--colorWhite);
+  fill: var(--colorWhite);
+}
+
+.header nav {
+  display: block;
+}
+
+.header nav ul {
+  display: inline-flex;
+}
+
+.header nav ul li {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1.5;
+  list-style-position: outside;
+}
+
+.unique-li {
+  width: 1px;
+  height: 16px;
+  background: currentColor;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: var(--colorWhite);
+  background-image: none;
+  background-origin: padding-box;
+  background-position: 0% 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  display: block;
+  margin: auto 17px;
+}
+
+.header nav ul li a {
+  padding: 28px 17px;
+  display: block;
+  font-weight: 700;
+  font-size: 15.4px;
+}
+
+.header nav ul li a.other-color {
+  color: var(--color-text-header);
+}
+
+.header nav ul li a.last-child {
+  padding-right: 0;
+  color: var(--color-text-header);
+}
+
+/* content */
+
+.content-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 846px;
+  height: 100vh;
+  text-align: center;
+  background-color: var(--colorSecundary);
+  background-image: url("https://www-growth.scdn.co/static/home/bursts.svg");
+  background-size: 175%;
+  background-position: 46% 4%;
+  background-repeat: no-repeat;
+}
+
+.hero-card-header {
+  width: 744px;
+  text-align: center;
+}
+
+.hero-card-header h1 {
+  color: var(--colorTerciary);
+  display: block;
+  font-size: 156px;
+  font-weight: 900;
+  letter-spacing: -6.24px;
+  line-height: 166px;
+  padding-bottom: 40px;
+  width: 100%;
+  font-family: Circular, spotify-circular, Helvetica, Arial, sans-serif;
+}
+
+.content-all p {
+  width: 800px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-bottom: 40px;
+  letter-spacing: normal;
+  color: var(--colorTerciary);
+}
+
+.btn-get-free {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: normal;
+  border-image-repeat: stretch;
+}
+
+.btn-get-free:hover {
+  transform: scale(1.1);
+}
+
+.btn-get-free div {
+  padding: 14px 32px;
+  font-size: inherit;
+  background-color: var(--colorTerciary);
+  color: var(--colorSecundary);
+  border-width: 0;
+  border-color: var(--colorSecundary);
+  border-radius: 500px;
+  border-image-outset: 0;
+  border-style: none;
+  border-image-slice: 100%;
+  text-transform: uppercase;
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  height: 530px;
+  background-color: transparent;
+}
