@@ -124,6 +124,10 @@ a {
   color: var(--color-text-header);
 }
 
+.header nav ul li a:hover {
+  color: var(--colorTerciary);
+}
+
 /* content */
 
 .content-all {
@@ -176,10 +180,12 @@ a {
   text-transform: none;
   letter-spacing: normal;
   border-image-repeat: stretch;
+  transition: all 500ms ease;
 }
 
 .btn-get-free:hover {
   transform: scale(1.1);
+  transition: all 500ms ease;
 }
 
 .btn-get-free div {
